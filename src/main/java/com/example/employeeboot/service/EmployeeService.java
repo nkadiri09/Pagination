@@ -29,6 +29,7 @@ public class EmployeeService {
 
     public List<Employee> getAllEmployeesWithSort(Integer pageNo, Integer pageSize, String sortBy)
     {
+        // For multiple key sorting Sort.by(sortby).and(Sort.by("<Field-Name>"))
         Pageable paging = PageRequest.of(pageNo, pageSize, Sort.by(sortBy));
 
         Page<Employee> pagedResult = repository.findAll(paging);
