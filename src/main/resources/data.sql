@@ -1,4 +1,3 @@
-INSERT INTO TBL_EMPLOYEES (first_name, last_name, email) VALUES
-  ('Dan', 'Vega', 'danvega@gmail.com'),
-  ('Jen', 'Vega', 'jenvega@email.com'),
-  ('Bella', 'Vega', 'bellavega@gmail.com');
+ INSERT INTO DEV.NOTES (content, createdDate, title, updatedDate) VALUES('This is my MyFirstNotes', now(), 'My FirstNotes', now() );
+
+ SELECT * FROM DEV.NOTES;
